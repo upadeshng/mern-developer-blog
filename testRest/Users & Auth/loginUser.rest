@@ -1,0 +1,30 @@
+@url = http://localhost:5000
+@contentType = application/json
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVhYmNmMDJkZjE5N2QzZjFlNjQwNzRhIn0sImlhdCI6MTU4ODMzMjU4MCwiZXhwIjoxNTg4NjkyNTgwfQ.Mfe8dhi-OkU_3pX8P3fUB5kPzm7qShxhM5w6hodkyUw
+
+### login user
+POST {{url}}/api/auth HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+    "email": "upadesh.ng@gmail.com",
+    "password": "123456"
+}
+
+### login user
+POST {{url}}/api/auth HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+    "email": "josn.ng@gmail.com",
+    "password": "123456"
+}
+
+### login user
+POST {{url}}/api/auth HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+    "email": "aak1.ng@gmail.com",
+    "password": "123456"
+}

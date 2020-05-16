@@ -1,0 +1,19 @@
+@url = http://localhost:5000
+@contentType = application/json
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVhYjlkNmRkZTI4N2UyZjU3OTAxZTJhIn0sImlhdCI6MTU4ODMyNjY4NywiZXhwIjoxNTg4Njg2Njg3fQ.qEok0G-zQT56qTpnChEkfN8MffzkX1e2VEtl2mhjAm4
+
+
+### Create & update profile
+PUT {{url}}/api/profile/experience HTTP/1.1
+Content-Type: {{contentType}}
+x-auth-token: {{token}}
+
+
+{
+    "title": "Web Developer",
+    "company":"Ladbrokd",
+    "location":"Boston, MA",
+    "from":"1-5-2006",
+    "to":"2-7-2009",
+    "description":"Create projects and web dev."
+}

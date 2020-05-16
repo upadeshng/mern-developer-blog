@@ -1,0 +1,9 @@
+@url = http://localhost:5000
+@contentType = application/json
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWViNjEzYjFhOTY3OTc1MWUxYjk2YjhkIn0sImlhdCI6MTU4ODk5MjEyOCwiZXhwIjoxNTg5MzUyMTI4fQ.tUs-SZa47fahaiuOMweR6NCLbe_UuEX2OMrhKM63bgA
+
+
+### Get logged in user
+GET {{url}}/api/auth HTTP/1.1
+Content-Type: {{contentType}}
+x-auth-token: {{token}}

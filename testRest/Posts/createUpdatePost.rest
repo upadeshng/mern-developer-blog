@@ -1,0 +1,14 @@
+@url = http://localhost:5000
+@contentType = application/json
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVhYmNmMDJkZjE5N2QzZjFlNjQwNzRhIn0sImlhdCI6MTU4ODMzMjU4MCwiZXhwIjoxNTg4NjkyNTgwfQ.Mfe8dhi-OkU_3pX8P3fUB5kPzm7qShxhM5w6hodkyUw
+
+
+### Create & update profile
+POST {{url}}/api/posts HTTP/1.1
+Content-Type: {{contentType}}
+x-auth-token: {{token}}
+
+{
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
+}
+

@@ -1,0 +1,39 @@
+@url = http://localhost:5000
+@contentType = application/json
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVhYjlkNmRkZTI4N2UyZjU3OTAxZTJhIn0sImlhdCI6MTU4ODMxMjMyNywiZXhwIjoxNTg4NjcyMzI3fQ.9TsQgilgCSZ6SEyI8Zs2iexY73KomYquxKQf_Xh8aiQ
+
+
+### Create & update profile
+POST {{url}}/api/profile HTTP/1.1
+Content-Type: {{contentType}}
+x-auth-token: {{token}}
+
+
+{
+    "status": "Developer",
+    "skills": "HTML, CSS, PHP, JS",
+    "company": "Medikoma",
+    "website": "www.medikoma.com",
+    "location": "Minbhawan",
+    "bio": "I am a developer",
+    "githubusername": "upadeshng",
+    "twitter": "https://twitter.com/upadeshng",
+    "facebook": "https://twitter.com/upadeshng",
+    "youtube": "https://twitter.com/upadeshng"
+}
+
+### Create & update profile
+POST {{url}}/api/profile HTTP/1.1
+Content-Type: {{contentType}}
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVhYmNmMDJkZjE5N2QzZjFlNjQwNzRhIn0sImlhdCI6MTU4ODMxNzk1NCwiZXhwIjoxNTg4Njc3OTU0fQ.mZN6lwXx7797uoJBGyOHB3RprBfI3UNNdrDExKcrplE
+
+
+{
+    "status": "Jr. Developer",
+    "skills": "HTML, CSS, JS",
+    "company": "Tech soft",
+    "website": "www.medikoma.com",
+    "location": "Boston, MA"
+}
+
+

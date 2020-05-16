@@ -1,0 +1,14 @@
+@url = http://localhost:5000
+@contentType = application/json
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVhYmNmMDJkZjE5N2QzZjFlNjQwNzRhIn0sImlhdCI6MTU4ODMzMjU4MCwiZXhwIjoxNTg4NjkyNTgwfQ.Mfe8dhi-OkU_3pX8P3fUB5kPzm7qShxhM5w6hodkyUw
+
+
+### Create & update profile
+PUT {{url}}/api/posts/comment/5eac0c61fce0235602af18da HTTP/1.1
+Content-Type: {{contentType}}
+x-auth-token: {{token}}
+
+{
+    "text": "lorem4"
+}
+

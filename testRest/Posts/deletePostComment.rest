@@ -1,0 +1,9 @@
+@url = http://localhost:5000
+@contentType = application/json
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVhYmNmMDJkZjE5N2QzZjFlNjQwNzRhIn0sImlhdCI6MTU4ODM0MjE5NywiZXhwIjoxNTg4NzAyMTk3fQ.mMCRsFGe26rdPAeUrjmThFnMm7egE-KbQncapcRVorE
+
+### delete experience
+DELETE {{url}}/api/posts/comment/5eac0c61fce0235602af18da/5eac33dd2e8c395d1c1d578c HTTP/1.1
+Content-Type: {{contentType}}
+x-auth-token: {{token}}
+
