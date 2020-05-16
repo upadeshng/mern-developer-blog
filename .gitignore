@@ -1,3 +1,4 @@
 node_modules/
 config/default.json
-client/default/*
+client/build/*
+client/!build/build.xml
